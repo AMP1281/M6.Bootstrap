@@ -3,6 +3,18 @@ body {
     color: red;
 }
 .test{
-    background: url(Exercici.1/img/logo.png);
+    background: url(../image/logo-1.png);
     color: yellow;
 }
+
+.navbar-logo{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+  }
+
+  .navbar-logo img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
