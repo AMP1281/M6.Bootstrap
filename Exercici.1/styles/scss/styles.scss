@@ -1,20 +1,52 @@
 
-body {
-    color: red;
+/*BODY*/
+html, body {
+width: 100vw;
+padding-top: 50px;
+display: flex;
 }
-.test{
-    background: url(../image/logo-1.png);
-    color: yellow;
+/*body > div.container{
+    display: flex;
+    height: 100%;
 }
+body > div.container > section{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100%;
+}
+    body > div.container > section > div.jumbotron{
+        display: flex;
+        height:9%;
+    }
+    body > div.container > section > div:nth-child(2){
+        display:flex;
+        height: 29%;
+    }
+    body > div.container > section > div:nth-child(3){
+        display: flex;
+        height: 29%;
+    }
+    body > div.container > section > div:nth-child(4){
+        display: flex;
+        height: 19%;
+    }
+    body > div.container > footer{
+        display: flex;
+        height: 4%;
+    }
 
-.navbar-logo{
-    display: inline-block;
-    vertical-align: middle;
-    width: 70px;
-  }
 
-  .navbar-logo img{
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+        body > div.container > section > div > div:nth-child(1) > a {
+            border-top-left-radius: 0px !important;
+            border-top-right-radius: 0px !important;
+        }
+
+        body > div.container > section > div > div:nth-child(2) > a {
+            border-top-left-radius: 0px !important;
+            border-top-right-radius: 0px !important;
+        }
+
+        body > div.container > section > div > div:nth-child(3) > a {
+            border-top-left-radius: 0px !important;
+            border-top-right-radius: 0px !important;
+        }*/

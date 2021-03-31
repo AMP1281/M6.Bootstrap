@@ -21,23 +21,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="container">
-
-
-
-
-
-        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+<body class="d-flex">
+    <div class="container d-flex">
+    <!------NAVBAR------->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top d-flex"><!--(navbar-expand-md responsive-->
             <!--Brand-->
-            <a href="#" class="navbar-brand"><img src="image/logo-1.png" alt="logo" style="width:60px"></a>
-            <!--Toggler/collapsible Button-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#uno">
+            <a href="#" class="navbar-brand order-1 order-md-0"><img src="image/logo-1.png" alt="logo" style="width:60px" class="mx-auto"></a>
+            <!--Toggler/collapsible Button (botó hamburguesa)-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dentrotoggler">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!--Navbar links and dropdown-->
-            <div class="collapse navbar-collapse" id="uno">
-                <ul class="navbar-nav mr-auto">
+            <div class="order-3 collapse navbar-collapse" id="dentrotoggler">
+                <ul class="navbar-nav mr-auto"><!--(mr-auto Fijado izquierda)-->
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle text-white" data-toggle="dropdown" id="navbardrop">Productes</a>
                             <div class="dropdown-menu">
@@ -62,8 +58,9 @@
                             </div>
                     </li>
                 </ul>
+            </div>
                     <!--Button to Open the Modal-->
-                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#mimodal" data-backdrop="false"><i class="fas fa-user"></i> Login / Registre</button>
+                    <button type="button" class="btn btn-secondary order-2 order-md-3" data-toggle="modal" data-target="#mimodal" data-backdrop="false"><i class="fas fa-user"></i> Login / Registre</button> <!--order2 mantiene login fuera toggler (y reordena menu en pantalla pequeña)-->
                     <!--The Modal-->
                     <div class="modal fade" id="mimodal">
                         <div class="modal-dialog modal-lg">
@@ -114,7 +111,7 @@
                                                     </div>
                                                     <div class="form-group form-check">
                                                         <label for="legal" class="form-check-label mb-n3">
-                                                            <input type="checkbox" class="form-check-input" required><p class="small text-muted">Al crear el compte, acceptes els <a href="#" class="text-muted font-weight-bold">Termes i Condicions</a> i la <a href="#"class="text-muted font-weight-bold">Política de Privadesa</a>, incloent la <a href="#"class="text-muted font-weight-bold">Política de Cookies</a>.</p>
+                                                            <input type="checkbox" class="form-check-input" required><p class="small text-muted">Al crear un compte, acceptes els <a href="#" class="text-muted font-weight-bold">Termes i Condicions</a> i la <a href="#"class="text-muted font-weight-bold">Política de Privadesa</a>, incloent la <a href="#"class="text-muted font-weight-bold">Política de Cookies</a>.</p>
                                                             <div class="valid-feedback">Vàlid.</div><div class="invalid-feedback">Aquest camp és obligatori.</div>
                                                         </label>
                                                     </div>
@@ -132,11 +129,67 @@
                             </div>
                         </div>
                     </div>
-            </div>
         </nav>
+    <!------SECTION------>
+        <section class="d-flex flex-column">
+
+            <div class="jumbotron d-flex">
+                <h3 class="text-center">Et portem a casa tots els nostres productes acabats de sortir del forn</h3>
+              </div>
+
+
+            <div class="card-deck row d-flex">
+                <div class="card img-fluid border border-0 d-flex">
+                    <img class="card-img-top" src="image/fleca.jpg" alt="fleca">
+                    <a href="#" class="btn btn-dark stretched-link">Fleca</a>
+                </div>
+                <div class="card img-fluid border border-0 d-flex">
+                    <img class="card-img-top" src="image/dolc.jpg" alt="dolc">
+                    <a href="#" class="btn btn-dark stretched-link">Dolços</a>
+                </div>
+                <div class="card img-fluid border border-0 d-flex">
+                    <img class="card-img-top" src="image/festa.jpg" alt="festa">
+                    <a href="#" class="btn btn-dark stretched-link">Festius</a>
+                </div>
+            </div>
+
+            <div class="card-deck row d-flex">
+                <div class="card img-fluid border border-0 d-flex">
+                    <img class="card-img-top" src="image/espelta.jpg" alt="espelta">
+                    <a href="#" class="btn btn-dark stretched-link">Espelta</a>
+                </div>
+                <div class="card img-fluid border border-0 d-flex">
+                    <img class="card-img-top" src="image/venut.jpg" alt="venut">
+                    <a href="#" class="btn btn-dark stretched-link">venut</a>
+                </div>
+                <div class="card img-fluid border border-0 d-flex">
+                    <img class="card-img-top" src="image/menuts.jpg" alt="menuts">
+                    <a href="#" class="btn btn-dark stretched-link">Menuts</a>
+                </div>
+            </div>
+
+            <div class="card-deck row d-flex">
+                <div class="card img-fluid border border-0 d-flex">
+                    <img class="card-img-top img-fluid border" src="image/consell.jpg" alt="receptes">
+                    <a href="#" class="btn btn-dark stretched-link">Receptes</a>
+                </div>
+                <div class="card img-fluid border border-0 d-flex">
+                    <img class="card-img-top" src="image/consells.jpg" alt="consells">
+                    <a href="#" class="btn btn-dark stretched-link">Consells</a>
+                </div>
+            </div>
 
 
 
+
+
+
+        </section>
+
+        <!--footer-->
+        <footer>
+            <nav class="pie d-flex"><i class="far fa-copyright"></i>Copyright 2020 - SMC Designs</nav>
+        </footer>
 
 
 
