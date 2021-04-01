@@ -25,8 +25,9 @@
     <div class="container d-flex">
     <!------NAVBAR------->
         <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top d-flex"><!--(navbar-expand-md responsive-->
+            <div class="container d-flex">
             <!--Brand-->
-            <a href="#" class="navbar-brand order-1 order-md-0"><img src="image/logo-1.png" alt="logo" style="width:60px" class="mx-auto"></a>
+            <a href="#" class="navbar-brand order-1 order-md-0"><img src="image/logo-1.png" alt="logo" style="width: 60px"></a>
             <!--Toggler/collapsible Button (botó hamburguesa)-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dentrotoggler">
                 <span class="navbar-toggler-icon"></span>
@@ -132,10 +133,14 @@
         </nav>
     <!------SECTION------>
         <section class="d-flex flex-column">
+            <div class="jumbotron flex-row d-flex justify-content-center">
+                <h4 class="text-center d-flex font-weight-bold">Et portem a casa tots els nostres productes acabats de sortir del forn</h4>
+            </div>
 
-            <div class="jumbotron d-flex">
-                <h3 class="text-center">Et portem a casa tots els nostres productes acabats de sortir del forn</h3>
-              </div>
+
+
+
+
 
 
             <div class="card-deck row d-flex">
@@ -153,32 +158,65 @@
                 </div>
             </div>
 
-            <div class="card-deck row d-flex">
-                <div class="card img-fluid border border-0 d-flex">
-                    <img class="card-img-top" src="image/espelta.jpg" alt="espelta">
-                    <a href="#" class="btn btn-dark stretched-link">Espelta</a>
+
+            <div class="jumbotron flex-column d-flex justify-content-center mt-5">
+                <h3 class="text-center mb-5 font-weight-bold"> ¡AIXO T'INTERESSA!</h3>
+                    
+
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="w-100 rounded" src="image/espelta.jpg" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="font-weight-bold"><a href="#" class="stretched-link">NOVETAT</a></h5>
+                                    <p>Sigues el primer en comprar el nostre pa d'espelta!</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="w-100 rounded" src="image/venut.jpg" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-body font-weight-bold"><a href="#" class="stretched-link">EL MÉS VENUT</a></h5>
+                                    <p class="text-body font-weight-bold">Prova el producte estrella de la nostre fleca</p>
+                                </div>
+                            </div>
+                        <div class="carousel-item">
+                                <img class="w-100 rounded" src="image/menuts.jpg" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5 class="text-body font-weight-bold"><a href="#" class="stretched-link">PER ALS MÉS MENUTS DE LA CASA</a></h5>
+                                    <p class="text-body font-weight-bold">Fes que el berenar sigui un joc amb els nostres panets</p>
+                                </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card img-fluid border border-0 d-flex">
-                    <img class="card-img-top" src="image/venut.jpg" alt="venut">
-                    <a href="#" class="btn btn-dark stretched-link">venut</a>
-                </div>
-                <div class="card img-fluid border border-0 d-flex">
-                    <img class="card-img-top" src="image/menuts.jpg" alt="menuts">
-                    <a href="#" class="btn btn-dark stretched-link">Menuts</a>
-                </div>
+                    
+                
             </div>
 
-            <div class="card-deck row d-flex">
-                <div class="card img-fluid border border-0 d-flex">
-                    <img class="card-img-top img-fluid border" src="image/consell.jpg" alt="receptes">
-                    <a href="#" class="btn btn-dark stretched-link">Receptes</a>
+            <div class="jumbotron flex-column d-flex justify-content-center mt-5">
+                <h3 class="text-center mb-5 font-weight-bold">CONSELLS I INSPIRACIÓ A LES NOSTRES XARXES SOCIALS</h3>
+
+                <div class="row d-flex">
+                    <div class="col-sm-2 d-flex"><img src="image/receptes.jpg" alt="Receptes" class="img-fluid rounded"></div>
+                    <div class="col-sm-10 d-flex flex-column justify-content-center">
+                        <h5 class="d-flex font-weight-bold">Receptes</h5>
+                        <p class="d-flex">Segueix les nostres receptes a Facebook, Instagram i Youtube. Et proposem cada dia menjars saborosos, saludables i sostenibles per a tota la família.</p>
+                    </div>
                 </div>
-                <div class="card img-fluid border border-0 d-flex">
-                    <img class="card-img-top" src="image/consells.jpg" alt="consells">
-                    <a href="#" class="btn btn-dark stretched-link">Consells</a>
+
+                <div class="row d-flex">
+                    <div class="col-sm-10 d-flex flex-column justify-content-center">
+                        <h5 class="d-flex justify-content-end font-weight-bold">Consells per una vida saludable</h5>
+                        <p class="d-flex justify-content-end">Visita les nostres xarxes socials i descobreix els nostres consells per portar una vida saludable. Podràs trobar propostes en alimentació, exercici i hàbits de descans entre altres.</p>
+                    </div>
+                    <div class="col-sm-2 d-flex"><img src="image/salut.jpg" alt="Consells" class="img-fluid rounded"></div>
+                  </div>
                 </div>
             </div>
-
 
 
 
@@ -188,7 +226,59 @@
 
         <!--footer-->
         <footer>
-            <nav class="pie d-flex"><i class="far fa-copyright"></i>Copyright 2020 - SMC Designs</nav>
+            <!-- footer navbar-->
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-bottom d-flex">
+                <div class="container d-flex">
+                    <!--boton pantallas pequeñas/links empresa-->
+                    <div>
+                        <button class="navbar-toggler border border-0" type="button" data-toggle="collapse" data-target="#dentropie">
+                            <span><i class="fas fa-info-circle"></i></span>
+                        </button>
+                        <!-- Links -->
+                        <div class="collapse navbar-collapse" id="dentropie">
+                        <ul class="navbar-nav d-flex">
+                                <li class="nav-item dropup">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Empresa</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Qui som?</a>
+                                            <a class="dropdown-item" href="#">Sostenibilitat</a>
+                                            <a class="dropdown-item" href="#">Treballa amb nosaltres</a>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropup">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Compra</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Atenció al client</a>
+                                            <a class="dropdown-item" href="#">Preguntes frequents</a>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropup">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Legal</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Condicions de compra</a>
+                                            <a class="dropdown-item" href="#">Nota Legal</a>
+                                            <a class="dropdown-item" href="#">Protecció de dades</a>
+                                        </div>
+                                </li>
+                        </ul>
+                    </div>
+                    </div>
+                        <!--Redes sociales-->
+                    <div>
+                        <ul class="navbar-nav d-flex flex-row">
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+                                </li>
+                                <li class="nav-item mx-1">
+                                    <a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+                                </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </footer>
 
 
