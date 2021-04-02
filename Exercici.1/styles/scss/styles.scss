@@ -6,38 +6,7 @@ padding-top: 50px;
 padding-bottom: 30px;
 }
 
-.card:hover{
-    box-shadow: 8px 8px 5px blue;    
-    transform: scale(1.1);
 
-}
-
-
-
-/*
-body > div.container > section{
-    height: 100%;
-}
-    body > div.container > section > div.jumbotron{
-        height:9%;
-    }
-            body > div.container.d-flex > section > div.jumbotron.flex-row.d-flex.justify-content-center > h3{
-                height: 100%;
-            }
-    body > div.container > section > div:nth-child(2){
-        height: 29%;
-    }
-    body > div.container > section > div:nth-child(3){
-        height: 29%;
-    }
-    body > div.container > section > div:nth-child(4){
-        height: 19%;
-    }
-    body > div.container > footer{
-        height: 4%;
-    }
-
-*/
         body > div.container > section > div > div:nth-child(1) > a {
             border-top-left-radius: 0px !important;
             border-top-right-radius: 0px !important;
