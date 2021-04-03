@@ -1,11 +1,9 @@
 
-
 /*BODY*/
 html, body {
 padding-top: 50px;
 padding-bottom: 30px;
 }
-
 
         body > div.container > section > div > div:nth-child(1) > a {
             border-top-left-radius: 0px !important;
@@ -29,12 +27,10 @@ padding-bottom: 30px;
             background-color: #ecb900;
         }
 
-
-
-        /*footer*/
-        body > footer > nav > div > button > span > i{
-            vertical-align: middle;
-            font-size: 2rem;
-            line-height: 1;
-            border-style: none;
-        }
+/*footer*/
+body > footer > nav > div > button > span > i{
+    vertical-align: middle;
+    font-size: 2rem;
+    line-height: 1;
+    border-style: none;
+}
