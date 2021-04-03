@@ -1,0 +1,22 @@
+
+body{
+  height: 100vh;
+}
+
+$theme-colors: (
+  "primary":  yellow,
+  "success": blue,
+  "info": red,
+  "warning": green,
+  "danger": pink,
+  "secondary": orange,
+  "dark": brown,
+  "light": cyan,
+  "white": grey,
+);
+
+$body-bg: purple;
+
+@import "../bootstrap/scss/bootstrap";
+
+
