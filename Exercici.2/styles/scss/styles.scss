@@ -1,8 +1,14 @@
 @import "../../bootstrap/css/bootstrap.css";
 
+
+// Required
+
+@import "../../bootstrap/scss/variables";
+
+
 /* change the colors */
-$primary: rebeccapurple;
-$danger: #dd0000;
-$success: lime;
-$warning: orange;
-$info: aqua;
+
+$theme-colors: (
+  "primary": yellow,
+  "danger": #ff4136
+);
