@@ -3,7 +3,7 @@ body{
   height: 100vh;
 }
 
-$theme-colors: (
+/*$theme-colors: (
   "primary":  yellow,
   "success": blue,
   "info": red,
@@ -15,7 +15,7 @@ $theme-colors: (
   "white": grey,
 );
 
-$body-bg: purple;
+$body-bg: purple;*/
 
 @import "../../bootstrap/scss/bootstrap";
 
